@@ -6,7 +6,7 @@ public class Team {
 	private Player player;
 	
 	public Team() {
-		
+		super();
 	}
 	
 	public Team(String name, Player player) {
@@ -25,7 +25,5 @@ public class Team {
 	}
 	public void setPlayer(Player player) {
 		this.player = player;
-	}
-	
-	
+	}	
 }
