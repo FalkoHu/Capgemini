@@ -5,9 +5,10 @@ public class Skill extends Match{
 	private String skillName;
 
 	public Skill() {
-		
+		super();
 	}
 	public Skill(String skillName) {
+		super();
 		this.skillName = skillName;
 	}
 	
