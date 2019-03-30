@@ -5,7 +5,6 @@ public class DeliveryBO {
 	private Delivery[] dArray;
 	
 	public Delivery createDelivery(String data, Innings[] inningsList) {
-		Delivery d;
 		String[] s = data.split(",");
 		long deliveryNumber = Long.parseLong(s[0]);
 		String batsman = s[1];
@@ -14,7 +13,7 @@ public class DeliveryBO {
 		long inningsNumber = Long.parseLong(s[4]);
 		for(int i = 0;i<inningsList.length; i++) {
 			if(inningsList[i].getInningsNumber() == inningsNumber) {
-				return d = new Delivery(deliveryNumber, batsman, bowler, runs, inningsNumber, inningsList[i]);
+				return new Delivery(deliveryNumber, batsman, bowler, runs, inningsNumber, inningsList[i]);
 			}
 		}
 		return null;
