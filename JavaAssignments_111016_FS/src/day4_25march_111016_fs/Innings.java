@@ -25,7 +25,4 @@ public class Innings {
 	public void setBattingTeam(String battingTeam) {
 		this.battingTeam = battingTeam;
 	}
-	
-	
-	
 }
