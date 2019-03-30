@@ -22,9 +22,9 @@ public class WalletDAOImp implements WalletDAO {
 
 	@Override
 	public boolean validateCustomer(Map<Integer, Customer> map, int accId) {
-			if(map.containsKey(accId)) 
-				return false;
-			return true;
+		if(map.containsKey(accId)) 
+			return false;
+		return true;
 	}
 
 	@Override
@@ -53,11 +53,11 @@ public class WalletDAOImp implements WalletDAO {
 
 	@Override
 	public boolean transferFunds(int accId, int recieverId, double amount) {
-			if(containsReciever(recieverId)) {
-				addFunds(recieverId, amount);
-				withdrawFunds(accId, amount);
-				return true;
-			}
+		if(containsReciever(recieverId)) {
+			addFunds(recieverId, amount);
+			withdrawFunds(accId, amount);
+			return true;
+		}
 		return false;
 	}
 
