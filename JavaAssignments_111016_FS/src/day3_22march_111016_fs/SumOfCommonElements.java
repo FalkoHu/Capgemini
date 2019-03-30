@@ -28,6 +28,5 @@ public class SumOfCommonElements {
 		} else {
 			System.out.println(res);
 		}
-		
 	}
 }
