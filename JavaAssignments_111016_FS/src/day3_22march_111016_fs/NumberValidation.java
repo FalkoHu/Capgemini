@@ -13,7 +13,5 @@ public class NumberValidation {
 			System.out.println("Valid number format");
 		else
 			System.out.println("Invalid number format");
-
 	}
-
 }
