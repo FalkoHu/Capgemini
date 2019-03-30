@@ -36,14 +36,15 @@ public class MainAssignment16 {
 			System.out.println("3.Exit");
 			switch(scan.nextInt()) {
 			case 1:
-					System.out.println("Player \t \t Country \t  Skill");
-					p.viewDetails(player);
-					break;
+				System.out.println("Player \t \t Country \t  Skill");
+				p.viewDetails(player);
+				break;
 			case 2: 
-					System.out.println("Enter the skill");
-					p.printPlayerDetailsWithSkill(player, scan.next());
-					break;
-			case 3: System.exit(0);
+				System.out.println("Enter the skill");
+				p.printPlayerDetailsWithSkill(player, scan.next());
+				break;
+			case 3: 
+				System.exit(0);
 			}
 		}
 	}
