@@ -5,6 +5,10 @@ public class Outcome {
 	private String status;
 	private String winnerTeam;
 	
+	public Outcome(){
+		super();
+	}
+	
 	public Outcome(String status, String winnerTeam) {
 		super();
 		this.status = status;
