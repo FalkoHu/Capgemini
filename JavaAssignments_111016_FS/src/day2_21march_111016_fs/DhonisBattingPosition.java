@@ -23,9 +23,8 @@ public class DhonisBattingPosition {
 	
 	static String result(int totalOver, int oversPlayed) {
 		if((oversPlayed*6) > (0.75)*totalOver)
-			return "Yes";
-		
-			return "No";
+			return "Yes";	
+		return "No";
 	}
 	
 }
