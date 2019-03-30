@@ -20,11 +20,11 @@ public class DeliveryBO {
 	}
 	
 	public String findInningsNumber(Innings[] inningsList, long deliveryNumber) {
-			for(int j = 0; j<dArray.length; j++) {
-				if(dArray[j].getDeliveryNumber() == deliveryNumber) {
-					return Long.toString(dArray[j].getInnings().getInningsNumber());
-				}
+		for(int j = 0; j<dArray.length; j++) {
+			if(dArray[j].getDeliveryNumber() == deliveryNumber) {
+				return Long.toString(dArray[j].getInnings().getInningsNumber());
 			}
+		}
 		return null;
 	}
 
