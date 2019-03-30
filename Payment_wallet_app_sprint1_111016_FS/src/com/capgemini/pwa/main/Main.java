@@ -81,9 +81,9 @@ public class Main {
 						while(subMenu) {
 							System.out.println("Please select one of the options \n"+
 									"1. Add fund to account\n"+
-									 "2. Show available funds\n"+
+									"2. Show available funds\n"+
 									"3. Show account information\n"+
-									 "4. Transfer fund to other account\n"+
+									"4. Transfer fund to other account\n"+
 									"5. Withdraw funds\n"+
 									"6. Logout and go back to main menu");
 							switch(scan.nextInt()) {
@@ -113,7 +113,7 @@ public class Main {
 											if(walletDao.transferFunds(accIdLogin, recieverId, sendAmount)) {
 											System.out.println("\nYou succesfully sent $"+sendAmount+" to "+
 												walletDao.getCustomer(recieverId).getName()+". \nYour new account balance is $"+
-													walletDao.getBalance(accIdLogin)+"\n");
+												walletDao.getBalance(accIdLogin)+"\n");
 										}else {
 											System.out.println("\nCustomer with customer id " + recieverId+" does not exists\n");
 										}
@@ -132,9 +132,9 @@ public class Main {
 									}
 									break;
 								case 6: showMainMenu = true;
-										subMenu = false;
-										accIdLogin = 0;
-										break;
+									subMenu = false;
+									accIdLogin = 0;
+									break;
 							}
 						}
 					}else {
@@ -148,7 +148,4 @@ public class Main {
 			}
 		}
 	}
-	
-	
-
 }
