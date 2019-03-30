@@ -16,36 +16,29 @@ public class Player {
 		this.skill = skill;
 	}
 
-
 	public String getName() {
 		return name;
 	}
-
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-
 	public String getCountry() {
 		return country;
 	}
-
 
 	public void setCountry(String country) {
 		this.country = country;
 	}
 
-
 	public Skill getSkill() {
 		return skill;
 	}
 
-
 	public void setSkill(Skill skill) {
 		this.skill = skill;
 	}
-
 
 	@Override
 	public String toString() {
@@ -53,11 +46,3 @@ public class Player {
 		return n;
 	}	
 }
-
-
-
-
-
-
-
-
