@@ -12,6 +12,5 @@ public class DifferenceBetween{
 			arr[i] = scan.nextInt();
 		}
 		System.out.println(UserMainCode.getBigDiff(arr));
-		
 	}
 }
