@@ -21,7 +21,6 @@ public class Match19 {
 			super();
 		}
 		
-		
 		public String getDate() {
 			return date;
 		}
