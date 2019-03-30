@@ -48,20 +48,23 @@ public class MainAssignment17 {
 			System.out.println("2. Find All Matches in A Specific Team");
 			
 			switch(scan.nextInt()) {
-				case 1 : mb = new MatchBO();
-						System.out.println("Enter match date");
-						mb.findTeam(scan.next(), match);
-						cont();
-						break;
+				case 1 : 
+					mb = new MatchBO();
+					System.out.println("Enter match date");
+					mb.findTeam(scan.next(), match);
+					cont();
+					break;
 						
-				case 2 : mb = new MatchBO();
-				System.out.println("Enter team name");
-						mb.findAllMatchesOfTeam(scan.next(), match);
-						cont();
-						break;
+				case 2 : 
+					mb = new MatchBO();
+					System.out.println("Enter team name");
+					mb.findAllMatchesOfTeam(scan.next(), match);
+					cont();
+					break;
 				
-				default : System.out.println("invalid entry");
-			
+				default : 
+					System.out.println("invalid entry");
+					break;
 			}
 		}
 			
