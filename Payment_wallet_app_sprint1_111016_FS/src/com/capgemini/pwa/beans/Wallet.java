@@ -5,6 +5,9 @@ public class Wallet {
 	private double amount;
 	private static int walletId;
 	
+	public Wallet(){
+		super();
+	}	
 	public Wallet() {
 		super();
 		amount = 0.00;
