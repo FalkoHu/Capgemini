@@ -1,0 +1,100 @@
+package com.capgemini.pwa.beans;
+
+public class Customer {
+
+	private int accId; 
+	private String password;
+	private String name;
+	private String email;
+	private String phoneNumber;
+	private String address;
+	private String dob;
+	private Wallet wallet;
+	
+	public Customer() {
+		super();	
+	}
+	public Customer(int SSN, String password, String name, String email, String phoneNumber, String address,
+			String dob, Wallet wallet) {
+		super();
+		this.accId = SSN;
+		this.password = password;
+		this.name = name;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
+		this.dob = dob;
+		this.wallet = wallet;
+	}
+
+	public int getAccId() {
+		return accId;
+	}
+	public void setAccId(int accId) {
+		this.accId = accId;
+	}
+	public long getSSN() {
+		return accId;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getDob() {
+		return dob;
+	}
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+
+	public Wallet getWallet() {
+		return wallet;
+	}
+
+	public void setWallet(Wallet wallet) {
+		this.wallet = wallet;
+	}
+	@Override
+	public String toString() {
+		return "account ID: " + accId + ", password: " + password + ", name: " + name + ", email: " + email
+				+ ", phoneNumber: " + phoneNumber + ", address: " + address + ", date-of-birth: " + dob;
+	}
+}
